@@ -1,0 +1,25 @@
+From a28572d0ee5eaf307d0d6340ce8949c68faac8bb Mon Sep 17 00:00:00 2001
+From: colestewart <tcstewart09@gmail.com>
+Date: Sat, 4 Oct 2014 16:05:20 -0500
+Subject: [PATCH] German hello world patch
+
+---
+ lab1_git/HelloWorld/src/HelloWorld.java | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/lab1_git/HelloWorld/src/HelloWorld.java b/lab1_git/HelloWorld/src/HelloWorld.java
+index a5c3bcb..9b72d37 100644
+--- a/lab1_git/HelloWorld/src/HelloWorld.java
++++ b/lab1_git/HelloWorld/src/HelloWorld.java
+@@ -1,7 +1,7 @@
+ 
+ public class HelloWorld {
+ 	public static void main( String [] args){
+-		System.out.println("Hello World!");
++		System.out.println("Hallo Welt!");
+ 	}
+ 
+ }
+-- 
+1.9.3 (Apple Git-50)
+
