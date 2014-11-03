@@ -1,4 +1,4 @@
 cd lab1/scraping-lab
-nosetests
+nosetests --with-coverage
 cd ../log-file-analysis-lab
-nosetests
+nosetests --with-coverage

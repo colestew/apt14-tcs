@@ -20,18 +20,3 @@ def randomized_user_list(n,k):
   return result
   
 
-if (len(sys.argv) > 1):
-  num_lines = int(sys.argv[1])
-else:
-  num_lines = 100
-
-if (len(sys.argv) > 2):
-  num_users = int(sys.argv[2])
-else:
-  num_users = 10
-
-site_list = randomized_site_list(num_lines)
-print site_list
-
-user_list = randomized_user_list(num_lines, num_users)
-print user_list
