@@ -23,184 +23,184 @@ public class TestTempConversionSite extends TestCase {
 	}
 
 
-//	public void testUserLogins() { // pw apple
-//		String[] users = {"andy", "bob", "charley"};
-//		String[] passwords = {"apple", "bathtub", "china"};
-//
-//		for (int i = 0; i < users.length; ++i) {
-//			driver.get("http://apt-public.appspot.com/testing-lab-login.html");
-//
-//			// Find the text input element by its name
-//			WebElement element;
-//
-//			// Enter something to search for
-//			element = driver.findElement(By.name("userId"));
-//			element.clear();
-//			element.sendKeys(users[i]);
-//
-//			element = driver.findElement(By.name("userPassword"));
-//			element.clear();
-//			element.sendKeys(passwords[i]);
-//
-//			element.submit();
-//
-//			if (driver.getTitle().equals("Frequent Login")) {
-//				try {
-//					Thread.sleep(10000);
-//				} catch (Exception e) {
-//					fail();
-//				}
-//				--i;
-//				continue;
-//			}
-//			element = driver.findElement(By.name("farenheitTemperature"));
-//			assertTrue(element != null);
-//		}
-//	}
-//
-//
-//	public void testUserLoginCaseInsensitive() {
-//		String[] users = {"Andy", "boB", "CHARLEY"};
-//		String[] passwords = {"apple", "bathtub", "china"};
-//
-//		for (int i = 0; i < users.length; ++i) {
-//			driver.get("http://apt-public.appspot.com/testing-lab-login.html");
-//
-//			// Find the text input element by its name
-//			WebElement element;
-//
-//			// Enter something to search for
-//			element = driver.findElement(By.name("userId"));
-//			element.clear();
-//			element.sendKeys(users[i]);
-//
-//			element = driver.findElement(By.name("userPassword"));
-//			element.clear();
-//			element.sendKeys(passwords[i]);
-//
-//			element.submit();
-//			if (driver.getTitle().equals("Frequent Login")) {
-//				try {
-//					Thread.sleep(10000);
-//				} catch (Exception e) {
-//					fail();
-//				}
-//				--i;
-//				continue;
-//			}
-//
-//			element = driver.findElement(By.name("farenheitTemperature"));
-//			assertTrue(element != null);
-//		}
-//	}
-//
-//
-//	public void testUserLoginUsersWhitespace() {
-//		String[] users = {"   andy", "bob  ", "   charley   "};
-//		String[] passwords = {"apple", "bathtub", "china"};
-//
-//		for (int i = 0; i < users.length; ++i) {
-//			driver.get("http://apt-public.appspot.com/testing-lab-login.html");
-//
-//			// Find the text input element by its name
-//			WebElement element;
-//
-//			// Enter something to search for
-//			element = driver.findElement(By.name("userId"));
-//			element.clear();
-//			element.sendKeys(users[i]);
-//
-//			element = driver.findElement(By.name("userPassword"));
-//			element.clear();
-//			element.sendKeys(passwords[i]);
-//
-//			element.submit();
-//
-//			if (driver.getTitle().equals("Frequent Login")) {
-//				try {
-//					Thread.sleep(10000);
-//				} catch (Exception e) {
-//					fail();
-//				}
-//				--i;
-//				continue;
-//			}
-//
-//			element = driver.findElement(By.name("farenheitTemperature"));
-//			assertTrue(element != null);
-//		}
-//	}
-//
-//	public void testUserLoginPasswordsWhitespace() {
-//		String[] users = {"   andy", "bob  ", "   charley   "};
-//		String[] passwords = {"  apple ", "  bathtub", "china  "};
-//
-//		for (int i = 0; i < users.length; ++i) {
-//			driver.get("http://apt-public.appspot.com/testing-lab-login.html");
-//
-//			// Find the text input element by its name
-//			WebElement element;
-//
-//			// Enter something to search for
-//			element = driver.findElement(By.name("userId"));
-//			element.clear();
-//			element.sendKeys(users[i]);
-//
-//			element = driver.findElement(By.name("userPassword"));
-//			element.clear();
-//			element.sendKeys(passwords[i]);
-//
-//			element.submit();
-//
-//			if (driver.getTitle().equals("Frequent Login")) {
-//				try {
-//					Thread.sleep(10000);
-//				} catch (Exception e) {
-//					fail();
-//				}
-//				--i;
-//				continue;
-//			}
-//
-//			element = driver.findElement(By.name("farenheitTemperature"));
-//			assertTrue(element != null);
-//		}
-//	}
-//
-//	public void testUserLoginPasswordsCaseSensitive() {
-//		String[] users = {"   andy", "bob  ", "   charley   "};
-//		String[] passwords = {"  Apple ", "  bATHtub", "chinA  "};
-//
-//		for (int i = 0; i < users.length; ++i) {
-//			driver.get("http://apt-public.appspot.com/testing-lab-login.html");
-//
-//			// Find the text input element by its name
-//			WebElement element;
-//
-//			// Enter something to search for
-//			element = driver.findElement(By.name("userId"));
-//			element.clear();
-//			element.sendKeys(users[i]);
-//
-//			element = driver.findElement(By.name("userPassword"));
-//			element.clear();
-//			element.sendKeys(passwords[i]);
-//
-//			element.submit();
-//
-//			if (driver.getTitle().equals("Frequent Login")) {
-//				try {
-//					Thread.sleep(10000);
-//				} catch (Exception e) {
-//					fail();
-//				}
-//				--i;
-//				continue;
-//			}
-//
-//			assertEquals(driver.getTitle(), "Bad Login");
-//		}
-//	}
+	public void testUserLogins() { // pw apple
+		String[] users = {"andy", "bob", "charley"};
+		String[] passwords = {"apple", "bathtub", "china"};
+
+		for (int i = 0; i < users.length; ++i) {
+			driver.get("http://apt-public.appspot.com/testing-lab-login.html");
+
+			// Find the text input element by its name
+			WebElement element;
+
+			// Enter something to search for
+			element = driver.findElement(By.name("userId"));
+			element.clear();
+			element.sendKeys(users[i]);
+
+			element = driver.findElement(By.name("userPassword"));
+			element.clear();
+			element.sendKeys(passwords[i]);
+
+			element.submit();
+
+			if (driver.getTitle().equals("Frequent Login")) {
+				try {
+					Thread.sleep(10000);
+				} catch (Exception e) {
+					fail();
+				}
+				--i;
+				continue;
+			}
+			element = driver.findElement(By.name("farenheitTemperature"));
+			assertTrue(element != null);
+		}
+	}
+
+
+	public void testUserLoginCaseInsensitive() {
+		String[] users = {"Andy", "boB", "CHARLEY"};
+		String[] passwords = {"apple", "bathtub", "china"};
+
+		for (int i = 0; i < users.length; ++i) {
+			driver.get("http://apt-public.appspot.com/testing-lab-login.html");
+
+			// Find the text input element by its name
+			WebElement element;
+
+			// Enter something to search for
+			element = driver.findElement(By.name("userId"));
+			element.clear();
+			element.sendKeys(users[i]);
+
+			element = driver.findElement(By.name("userPassword"));
+			element.clear();
+			element.sendKeys(passwords[i]);
+
+			element.submit();
+			if (driver.getTitle().equals("Frequent Login")) {
+				try {
+					Thread.sleep(10000);
+				} catch (Exception e) {
+					fail();
+				}
+				--i;
+				continue;
+			}
+
+			element = driver.findElement(By.name("farenheitTemperature"));
+			assertTrue(element != null);
+		}
+	}
+
+
+	public void testUserLoginUsersWhitespace() {
+		String[] users = {"   andy", "bob  ", "   charley   "};
+		String[] passwords = {"apple", "bathtub", "china"};
+
+		for (int i = 0; i < users.length; ++i) {
+			driver.get("http://apt-public.appspot.com/testing-lab-login.html");
+
+			// Find the text input element by its name
+			WebElement element;
+
+			// Enter something to search for
+			element = driver.findElement(By.name("userId"));
+			element.clear();
+			element.sendKeys(users[i]);
+
+			element = driver.findElement(By.name("userPassword"));
+			element.clear();
+			element.sendKeys(passwords[i]);
+
+			element.submit();
+
+			if (driver.getTitle().equals("Frequent Login")) {
+				try {
+					Thread.sleep(10000);
+				} catch (Exception e) {
+					fail();
+				}
+				--i;
+				continue;
+			}
+
+			element = driver.findElement(By.name("farenheitTemperature"));
+			assertTrue(element != null);
+		}
+	}
+
+	public void testUserLoginPasswordsWhitespace() {
+		String[] users = {"   andy", "bob  ", "   charley   "};
+		String[] passwords = {"  apple ", "  bathtub", "china  "};
+
+		for (int i = 0; i < users.length; ++i) {
+			driver.get("http://apt-public.appspot.com/testing-lab-login.html");
+
+			// Find the text input element by its name
+			WebElement element;
+
+			// Enter something to search for
+			element = driver.findElement(By.name("userId"));
+			element.clear();
+			element.sendKeys(users[i]);
+
+			element = driver.findElement(By.name("userPassword"));
+			element.clear();
+			element.sendKeys(passwords[i]);
+
+			element.submit();
+
+			if (driver.getTitle().equals("Frequent Login")) {
+				try {
+					Thread.sleep(10000);
+				} catch (Exception e) {
+					fail();
+				}
+				--i;
+				continue;
+			}
+
+			element = driver.findElement(By.name("farenheitTemperature"));
+			assertTrue(element != null);
+		}
+	}
+
+	public void testUserLoginPasswordsCaseSensitive() {
+		String[] users = {"   andy", "bob  ", "   charley   "};
+		String[] passwords = {"  Apple ", "  bATHtub", "chinA  "};
+
+		for (int i = 0; i < users.length; ++i) {
+			driver.get("http://apt-public.appspot.com/testing-lab-login.html");
+
+			// Find the text input element by its name
+			WebElement element;
+
+			// Enter something to search for
+			element = driver.findElement(By.name("userId"));
+			element.clear();
+			element.sendKeys(users[i]);
+
+			element = driver.findElement(By.name("userPassword"));
+			element.clear();
+			element.sendKeys(passwords[i]);
+
+			element.submit();
+
+			if (driver.getTitle().equals("Frequent Login")) {
+				try {
+					Thread.sleep(10000);
+				} catch (Exception e) {
+					fail();
+				}
+				--i;
+				continue;
+			}
+
+			assertEquals(driver.getTitle(), "Bad Login");
+		}
+	}
 
 	public void testTemperatureDoublePrecision() {
 		int[] testValues = {-1, 0, 100, 211};
