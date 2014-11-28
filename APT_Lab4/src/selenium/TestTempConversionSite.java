@@ -22,7 +22,6 @@ public class TestTempConversionSite extends TestCase {
 		driver.quit();
 	}
 
-
 	public void testUserLogins() { // pw apple
 		String[] users = {"andy", "bob", "charley"};
 		String[] passwords = {"apple", "bathtub", "china"};

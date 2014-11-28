@@ -68,6 +68,13 @@ public class RationalTest extends TestCase {
     	assertTrue(s.plus(t).equals(res) && t.plus(s).equals(res));
     }
     
+    public void testPlusNegative() {
+    	Rational s = new Rational(1,-4);
+    	Rational t = new Rational(1, -4);
+    	Rational res = new Rational(1, -2);
+    	assertTrue(s.plus(t).equals(res) && t.plus(s).equals(res));
+    }
+    
     public void testTimes() {
     	Rational s = new Rational(1,4);
     	Rational t = new Rational(1, 4);
